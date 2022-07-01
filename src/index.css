@@ -1,0 +1,32 @@
+@import url('sanitize.css');
+@import url('sanitize.css/forms.css');
+@import url('sanitize.css/typography.css');
+
+:root {
+  --colors-primary: #00c;
+  --colors-error: #c00;
+  --space-1: 5px;
+  --space-2: 10px;
+  --space-3: 15px;
+  --space-4: 20px;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+small {
+  font-size: 12px;
+}
+
+button {
+  border: 0;
+  color: var(--colors-primary);
+  cursor: pointer;
+  padding: 0;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}

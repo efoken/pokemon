@@ -1,0 +1,26 @@
+.abilityTable {
+  border-style: inherit;
+  border-width: 0;
+}
+
+.abilityTable * {
+  border-style: inherit;
+  border-width: 0;
+}
+
+.abilityTable th,
+.abilityTable td {
+  border-bottom-color: inherit;
+  border-bottom-width: 1px;
+  min-width: 75px;
+  padding: var(--space-1);
+  text-align: center;
+}
+
+.abilityTable th {
+  font-size: 30px;
+}
+
+.abilityTable td {
+  font-size: 12px;
+}
