@@ -55,10 +55,16 @@ export function PokemonErrorView({ error, onReset }) {
 }
 
 export function PokemonInfoView({
-  pokemonData: { imageUrl, name, number, abilities },
+  pokemonData: { name, number, type, imageUrl, abilities },
 }) {
   return (
-    <div className={styles.dataView} style={{ borderStyle: 'solid' }}>
+    <div
+      className={styles.dataView}
+      style={{
+        borderStyle: 'solid',
+        borderColor: `var(--colors-${type.toLowerCase()})`,
+      }}
+    >
       <h2 className={styles.dataViewHeader}>
         {name} <sup>({number})</sup>
       </h2>

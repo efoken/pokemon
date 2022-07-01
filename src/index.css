@@ -5,6 +5,13 @@
 :root {
   --colors-primary: #00c;
   --colors-error: #c00;
+  --colors-bug: #960;
+  --colors-dragon: #999;
+  --colors-electric: #cc0;
+  --colors-fire: #c00;
+  --colors-grass: #090;
+  --colors-psychic: #c09;
+  --colors-water: #00c;
   --space-1: 5px;
   --space-2: 10px;
   --space-3: 15px;

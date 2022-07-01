@@ -4,6 +4,7 @@ const fetchPokemon = async (pokemonName) => {
       pokemon(name: $name) {
         number
         name
+        types
         image
         attacks {
           special {
@@ -33,10 +34,11 @@ const fetchPokemon = async (pokemonName) => {
       const {
         name,
         number,
+        types: [type],
         image: imageUrl,
         attacks: { special: abilities },
       } = pokemon
-      return { name, number, imageUrl, abilities }
+      return { name, number, type, imageUrl, abilities }
     })
 }
 
