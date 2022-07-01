@@ -1,4 +1,4 @@
 .app {
-  margin: 0 auto;
+  margin: var(--space-5) auto;
   max-width: 600px;
 }
