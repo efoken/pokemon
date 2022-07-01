@@ -1,10 +1,9 @@
-import clsx from 'clsx'
 import styles from './Button.module.css'
 
 export default function Button({ children, className, ...restProps }) {
   return (
     <button
-      className={clsx(styles.button, className)}
+      className={`${styles.button} ${className}`.trim()}
       type="button"
       {...restProps}
     >
